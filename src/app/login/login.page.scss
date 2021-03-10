@@ -1,0 +1,53 @@
+ion-grid{
+    background-image: url(/assets/back-bg-big.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    height: 100%;
+    ion-row{
+        height: 100%;
+        .login-text-panel{
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            width: 100%;
+            .login-text-section{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding-bottom: 50px;
+                h2{                   
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0.01em;
+                    margin:0 0 10px;
+                    padding:0;
+                    color: rgba(0, 0, 0, 0.8);
+                }
+                p{
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 15px;
+                    letter-spacing: 0.01em;
+                    margin:0 0 30px;
+                    padding:0;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+                img{
+                    margin-bottom: 50px;
+                }
+                p.last-text{ 
+                    font-size: 12px;    
+                    margin: 0;
+                    color: rgba(0, 0, 0, 0.75);
+                }
+            }
+        }
+    }
+    
+    
+  }

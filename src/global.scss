@@ -24,3 +24,82 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+html.ios,
+html.md {
+  --ion-default-font: "Roboto", sans-serif;
+  --ion-font-family: "Roboto", sans-serif;
+}
+
+:focus {
+  outline: none;
+}
+
+ion-grid{
+    padding-inline-start: 0;
+    scroll-padding-inline-end: 0;
+    padding: 0;
+}
+@mixin new-heading() {
+  font-size: 19px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color: #2b4336;
+  margin: 0;
+  text-align: center;
+
+  span {
+    font-weight: 700;
+  }
+}
+.new-header {
+  ion-toolbar {
+    --padding-start: 0 !important;
+    margin: 10px 15px;
+    --border-width:0 !important;
+    width: auto;
+    --padding-end: 0;
+    .back {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 24px;
+
+      img {
+        max-width: 24px;
+      }
+    }
+    .filter {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      color: #9396a7;
+      font-size: 14px;
+
+      img {
+        max-width: 24px;
+      }
+
+      ion-button {
+        --ion-color-primary: #fff !important;
+        font-size: 14px;
+        color: #3846cd;
+        --padding-start: 0;
+        --padding-end: 0;
+        --padding-top: 0;
+        --padding-bottom: 0;
+        height: auto;
+        --color-activated: #000;
+        --background-activated: transparent;
+        text-transform: capitalize;
+        --box-shadow: none;
+      }
+    }
+  }
+}
+.page-content{
+  padding: 40px 15px;
+}

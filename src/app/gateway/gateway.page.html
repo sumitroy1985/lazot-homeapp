@@ -1,0 +1,33 @@
+<ion-header>
+	<div class="new-header">
+		<ion-toolbar>			
+				<span class="back"><img alt="image" title="image" src="../assets/back-black-icon.png"></span>
+				<span class="filter"><img alt="image" title="image" src="../assets/notification.png"></span>			
+		</ion-toolbar>
+	</div>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="page-content">
+    <ion-row>
+      <ion-card>
+        <ion-card-title>Gateway</ion-card-title>
+        <ion-button class="circle-button" [routerLink]="['/gateway-onboarding']">          
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-button>
+      </ion-card>
+      <ion-card>
+        <ion-card-title>Device</ion-card-title>
+        <ion-button class="circle-button" [routerLink]="['/gateway-onboarding']">          
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-button>
+      </ion-card>
+      <ion-card>
+        <ion-card-title>New Device</ion-card-title>
+        <ion-button class="circle-button" [routerLink]="['/gateway-onboarding']">          
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-button>
+      </ion-card>
+    </ion-row>
+  </ion-grid>    
+</ion-content>
