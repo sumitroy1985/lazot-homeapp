@@ -1,7 +1,7 @@
 <ion-header>
 	<div class="new-header">
 		<ion-toolbar>			
-				<span class="back" (click)="goBack()"><img alt="image" title="image" src="../assets/back-black-icon.png"></span>
+				<span class="back" [routerLink]="['/gateway']"><img alt="image" title="image" src="../assets/back-black-icon.png"></span>
 				<span class="filter"><img alt="image" title="image" src="../assets/notification.png"> </span>			
 		</ion-toolbar>
 	</div>
@@ -18,7 +18,7 @@
     </ion-row>
     <ion-row class="onboarding-bottom">
       <p>If the <strong>Lights On,</strong> Press next Button</p>
-      <ion-button expand="block" class="full-button" [routerLink]="['/gateway']">          
+      <ion-button expand="block" class="full-button" [routerLink]="['/gateway-configuration']">          
         Next 
       </ion-button>
     </ion-row>

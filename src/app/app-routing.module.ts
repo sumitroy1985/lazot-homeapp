@@ -34,6 +34,22 @@ const routes: Routes = [
   {
     path: 'gateway-onboarding',
     loadChildren: () => import('./gateway-onboarding/gateway-onboarding.module').then( m => m.GatewayOnboardingPageModule)
+  },
+  {
+    path: 'gateway-configuration',
+    loadChildren: () => import('./gateway-configuration/gateway-configuration.module').then( m => m.GatewayConfigurationPageModule)
+  },
+  {
+    path: 'add-device',
+    loadChildren: () => import('./add-device/add-device.module').then( m => m.AddDevicePageModule)
+  },
+  {
+    path: 'scan-now',
+    loadChildren: () => import('./scan-now/scan-now.module').then( m => m.ScanNowPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   }
 ];
 

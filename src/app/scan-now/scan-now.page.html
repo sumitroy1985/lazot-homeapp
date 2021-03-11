@@ -1,0 +1,30 @@
+<ion-header>
+	<div class="new-header">
+		<ion-toolbar>			
+				<span class="back" [routerLink]="['/gateway-onboarding']"><img alt="image" title="image" src="../assets/back-black-icon.png"></span>
+		</ion-toolbar>
+	</div>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="">
+    <!--LOGO PANEL START-->
+    <ion-row>      
+      <IonCol size="12" size-sm class="register-panel">      
+        <form [formGroup]="signupForm">       
+        <img class="image-center" alt="Qr Code" title="Qr Code" [routerLink]="['/scan-now']" src="../assets/qr-code-big.png">
+        <p class="center-text">QR Code quick scan</p>       
+        <ion-button expand="block" class="full-button" [routerLink]="['/gateway']">          
+          FROM IMAGE 
+        </ion-button>
+        <ion-button expand="full" fill="outline" class="full-button-withicon" [routerLink]="['/new-user-register']">          
+          CANCEL SCAN
+        </ion-button>        
+      </form>         
+        
+      </IonCol>
+    </ion-row>
+  </ion-grid>  
+</ion-content>
+
+

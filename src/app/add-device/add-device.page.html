@@ -1,0 +1,39 @@
+<ion-header>
+	<div class="new-header">
+		<ion-toolbar>			
+				<span class="back" [routerLink]="['/gateway-onboarding']"><img alt="image" title="image" src="../assets/back-black-icon.png"></span>
+				<span class="filter"><img alt="image" title="image" src="../assets/notification.png"></span>			
+		</ion-toolbar>
+	</div>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="">
+    <!--LOGO PANEL START-->
+    <ion-row>      
+      <IonCol size="12" size-sm class="register-panel">
+        <h2>Add Device</h2>
+        <p class="center-text">Continue with your User ID & Password</p>
+        <form [formGroup]="signupForm">
+        <ion-item class="form-input">
+          <ion-label>Device ID</ion-label>
+          <ion-input type="text" inputmode="text"></ion-input>
+        </ion-item>        
+        <ion-item class="form-input">
+          <ion-label>Password</ion-label>
+          <ion-icon name="eye" class="form-input-icon"></ion-icon>
+          <ion-input type="password" inputmode="text"></ion-input>
+        </ion-item>
+                
+        <ion-button expand="block" class="full-button" [routerLink]="['/gateway']">          
+          Set Now 
+        </ion-button>
+      </form>         
+        <p class="center-text">Or Scan your device QR Code</p>  
+        <img class="image-center" alt="Qr Code" title="Qr Code" [routerLink]="['/scan-now']" src="../assets/qr-code.png">
+        <p class="center-text" [routerLink]="['/scan-now']">Scan Now</p>
+      </IonCol>
+    </ion-row>
+  </ion-grid>  
+</ion-content>
+
